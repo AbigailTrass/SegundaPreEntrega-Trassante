@@ -1,0 +1,1001 @@
+
+
+ /*desktop*/
+
+
+*{
+    background-color: black;
+}
+
+/* Estilo de Home */
+.btn {
+    border: none !important;
+    color: white !important;
+    background-color:rgba(124, 39, 48, 0.55) !important;
+}
+
+.btn:hover{
+    margin-top: 10px;
+    box-shadow: 0 1rem 3rem rgba(124, 39, 48, 0.55);
+}
+
+.mt {
+    margin-top: 20px;
+}
+
+.mt-0{
+    margin-left: 50px;
+}
+
+/*Estilo de Sobre Mi*/
+
+.card{
+    background-color: black !important;
+    color: brown !important;
+    border: none !important;
+    padding-top: 5rem;
+}
+
+.mt-img{
+    margin-top: 9rem !important;
+    margin-left: 5rem;
+}
+
+.mr-text {
+    margin-right: 100px;
+    font-size: medium;
+}
+
+.card-body{
+    margin-top: 10rem;
+    color: brown !important;
+}
+.card-text {
+    color: white;
+    font-size: 2rem;
+}
+
+.mt-footer{
+    margin-top: none !important;
+}
+
+/*hoover aplicando en Sobre Mi */
+.card:hover {
+    border: solid brown!important;
+    box-shadow:  0 1rem 3rem rgba(124, 39, 48, 0.55)
+}
+
+
+/*Estilo de Habilidades*/
+
+
+.cardsup{
+    align-items: center;
+    padding-left: 35rem;
+    padding-top: 5rem;
+    display: grid;
+    grid-area: 10px;
+     grid-column-start: 4;
+     grid-template-columns: 200px 200px 200px;
+     grid-column-gap: 70px;
+     grid-row-gap: 50px;
+}
+
+
+.idioma{
+    font-style:oblique ;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 5rem;
+    color:white;
+}
+ /*CSS estilo */
+h1{
+    background: none;
+    width: 10rem;
+
+}
+
+h1:hover{
+    color: brown;
+}
+
+.css-card::before{
+    content: "CSS";
+    align-content: center;
+    background: none;
+    color: white;
+    text-decoration: none;
+}
+
+.css-card::after:hover{
+    background: none;
+    color: white;
+    text-decoration: none;
+}
+
+.cardcss-1 {
+    padding-top: 7rem;
+    margin-left: 4rem;
+    width: 12.5rem;
+    height: 17rem;
+    background-color: #29282863;
+    border-radius: 1rem;
+    border: #2b2929ad 0.2rem solid;
+    transition: all 0.4s ease-in;
+    box-shadow: 0.4rem 0.4rem 0.6rem rgba(124, 39, 48, 0.55);
+   }
+   
+   .cardcss-1:hover {
+    transform: translateY(-1.5rem);
+    border: rgba(124, 39, 48, 0.55) 0.2em solid;
+    border-radius: 2.5rem 0 2.5rem 0;
+   }
+   
+   /*HTML estilo */
+   .cardcss-2 {
+    padding-top: 7rem;
+    margin-left: 4rem;
+    width: 12.5rem;
+    height: 17rem;
+    background-color: #29282863;
+    border-radius: 1rem;
+    border: #2b2929ad 0.2rem solid;
+    transition: all 0.4s ease-in;
+    box-shadow: 0.4rem 0.4rem 0.6rem rgba(124, 39, 48, 0.55);
+   }
+   
+   .cardcss-2:hover {
+    transform: translateY(-1.5rem);
+    border: rgba(124, 39, 48, 0.55) 0.2em solid;
+    border-radius: 2.5rem 0 2.5rem 0;
+   }
+   .html-card::before{
+    content: "HTML";
+    align-content: center;
+    background: none;
+    color: white;
+    text-decoration: none;
+}
+
+.html-card::after:hover{
+    background: none;
+    color: white;
+    text-decoration: none;
+}
+
+/*JS estilo */
+.cardcss-3 {
+    padding-top: 7rem;
+    margin-left: 4rem;
+    width: 12.5rem;
+    height: 17rem;
+    background-color: #29282863;
+    border-radius: 1rem;
+    border: #2b2929ad 0.2rem solid;
+    transition: all 0.4s ease-in;
+    box-shadow: 0.4rem 0.4rem 0.6rem rgba(124, 39, 48, 0.55);
+   }
+   
+   .cardcss-3:hover {
+    transform: translateY(-1.5rem);
+    border: rgba(124, 39, 48, 0.55) 0.2em solid;
+    border-radius: 2.5rem 0 2.5rem 0;
+   }
+   .js-card::before{
+    content: "JavaScript";
+    align-content: center;
+    background: none;
+    color: white;
+    text-decoration: none;
+}
+
+.js-card::after:hover{
+    background: none;
+    color: white;
+    text-decoration: none;
+}
+
+/*React estilo */
+.cardcss-4 {
+    padding-top: 7rem;
+    margin-left: 4rem;
+    width: 12.5rem;
+    height: 17rem;
+    background-color: #29282863;
+    border-radius: 1rem;
+    border: #2b2929ad 0.2rem solid;
+    transition: all 0.4s ease-in;
+    box-shadow: 0.4rem 0.4rem 0.6rem rgba(124, 39, 48, 0.55);
+   }
+   
+   .cardcss-4:hover {
+    transform: translateY(-1.5rem);
+    border: rgba(124, 39, 48, 0.55) 0.2em solid;
+    border-radius: 2.5rem 0 2.5rem 0;
+   }
+   .react-card::before{
+    content: "React";
+    align-content: center;
+    background: none;
+    color: white;
+    text-decoration: none;
+}
+
+.react-card::after:hover{
+    background: none;
+    color: white;
+    text-decoration: none;
+}
+
+/*PS estilo */
+.cardcss-6 {
+    padding-top: 7rem;
+    margin-left: 4rem;
+    width: 12.5rem;
+    height: 17rem;
+    background-color: #29282863;
+    border-radius: 1rem;
+    border: #2b2929ad 0.2rem solid;
+    transition: all 0.4s ease-in;
+    box-shadow: 0.4rem 0.4rem 0.6rem rgba(124, 39, 48, 0.55);
+   }
+   
+   .cardcss-6:hover {
+    transform: translateY(-1.5rem);
+    border: rgba(124, 39, 48, 0.55) 0.2em solid;
+    border-radius: 2.5rem 0 2.5rem 0;
+   }
+   .ps-card::before{
+    content: "Photoshop";
+    align-content: center;
+    background: none;
+    color: white;
+    text-decoration: none;
+}
+
+.ps-card::after:hover{
+    background: none;
+    color: white;
+    text-decoration: none;
+}
+
+/*AI estilo */
+
+.cardcss-5 {
+    padding-top: 7rem;
+    margin-left: 4rem;
+    width: 12.5rem;
+    height: 17rem;
+    background-color: #29282863;
+    border-radius: 1rem;
+    border: #2b2929ad 0.2rem solid;
+    transition: all 0.4s ease-in;
+    box-shadow: 0.4rem 0.4rem 0.6rem rgba(124, 39, 48, 0.55);
+   }
+   
+   .cardcss-5:hover {
+    transform: translateY(-1.5rem);
+    border: rgba(124, 39, 48, 0.55) 0.2em solid;
+    border-radius: 2.5rem 0 2.5rem 0;
+   }
+   .ai-card::before{
+    content: "Adobe Ilustrator";
+    align-content: center;
+    background: none;
+    color: white;
+    text-decoration: none;
+}
+
+.ai-card::after:hover{
+    background: none;
+    color: white;
+    text-decoration: none;
+}
+
+/*wp estilo */
+
+.cardcss-7 {
+    padding-top: 7rem;
+    margin-left: 4rem;
+    width: 12.5rem;
+    height: 17rem;
+    background-color: #29282863;
+    border-radius: 1rem;
+    border: #2b2929ad 0.2rem solid;
+    transition: all 0.4s ease-in;
+    box-shadow: 0.4rem 0.4rem 0.6rem rgba(124, 39, 48, 0.55);
+   }
+   
+   .cardcss-7:hover {
+    transform: translateY(-1.5rem);
+    border: rgba(124, 39, 48, 0.55) 0.2em solid;
+    border-radius: 2.5rem 0 2.5rem 0;
+   }
+   .wp-card::before{
+    content: "WordPress";
+    align-content: center;
+    background: none;
+    color: white;
+    text-decoration: none;
+}
+
+.wp-card::after:hover{
+    background: none;
+    color: white;
+    text-decoration: none;
+}
+
+/*figma estilo */
+
+.cardcss-8 {
+    padding-top: 7rem;
+    margin-left: 4rem;
+    width: 12.5rem;
+    height: 17rem;
+    background-color: #29282863;
+    border-radius: 1rem;
+    border: #2b2929ad 0.2rem solid;
+    transition: all 0.4s ease-in;
+    box-shadow: 0.4rem 0.4rem 0.6rem rgba(124, 39, 48, 0.55);
+   }
+   
+   .cardcss-8:hover {
+    transform: translateY(-1.5rem);
+    border: rgba(124, 39, 48, 0.55) 0.2em solid;
+    border-radius: 2.5rem 0 2.5rem 0;
+   }
+   .fg-card::before{
+    content: "Figma";
+    align-content: center;
+    background: none;
+    color: white;
+    text-decoration: none;
+}
+
+.fg-card::after:hover{
+    background: none;
+    color: white;
+    text-decoration: none;
+}
+
+/*Card de idioma*/
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+  }
+  
+  .card-idioma {
+    margin: 2%;
+    background: #DBBDBD;
+    width: 15rem;
+    height: 15rem;
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    transition: .2s all;
+    align-items: center;
+    text-align: center;
+    font-size: 9px;
+    padding-top: 40px;
+  }
+  
+  .card-idioma > span {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    background: none;
+    font-size: 2rem;
+    max-width: 100rem;
+  }
+  
+  .container:hover .card {
+    filter: blur(3px);
+    opacity: .5;
+    transform: scale(.98);
+    box-shadow: none;
+  }
+  
+  .container:hover .card-idioma:hover {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+    box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+    background: #A82C2C;
+    color: white;
+  }
+
+  /*Estilo en Contacto */
+
+  .mt-cont{
+    padding-top: 10rem ;
+    padding-left: 35rem;
+  }
+.card-contacto {
+    background-color: black ;
+    color: brown ;
+    border: none;
+    padding-top: 2rem;
+    padding-left: 5srem;
+    padding-bottom: 2rem;
+}
+.card-body{
+    margin-top: 10rem;
+    color: brown;
+}
+.card-contacto:hover {
+    border: solid brown;
+    box-shadow:  0 1rem 3rem rgba(124, 39, 48, 0.55);
+}
+
+/*Estilo de form */
+
+.mt-form{
+    margin-top: 2rem;
+    padding-left: 45rem;
+}
+.mt-form-top{
+    margin-top: 10rem;
+}
+
+.btnform{
+    margin-top: 1rem;
+    border-radius: 0.5rem !important;
+    color: white ;
+    background-color:rgba(124, 39, 48, 0.55) !important;
+}
+.btnformd {
+    border-radius: 0.5rem !important;
+    color: white ;
+    background-color:rgba(124, 39, 48, 0.55) !important;
+}
+
+.btnformd:hover{
+    margin-top: 10px;
+    box-shadow: 0 1rem 3rem rgba(124, 39, 48, 0.55);
+}
+
+.btnform:hover{
+    margin-top: 10px;
+    box-shadow: 0 1rem 3rem rgba(124, 39, 48, 0.55);
+}
+
+.contactame{
+    margin-left: 60rem;
+    color: white;
+}
+
+.btn-mobile{
+    margin-left: 50rem;
+}
+
+/*Estilo de Portfolio */
+
+.mt-port{
+    display: flex;
+   margin: 0;
+   padding: 2rem 0 0 10rem;
+}
+
+.card-port {
+    margin-left: 5rem;
+    width: 190px;
+    height: 254px;
+    background: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+  }
+  
+  .card-port:hover {
+    width: 190px;
+    height: 254px;
+    background-image:url(/Images/Rectangle\ 2.png);
+    background-size:cover;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: black;
+    transition: all .5s;
+  }
+
+  .card-port-ps:hover{
+    width: 190px;
+    height: 254px;
+    background-image:url(/Images/image\ 1.png);
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 20px;
+    background-color: #dfdfdf;
+    transition: all .5s;
+  }
+
+  .card-port-html {
+    margin-left: 5rem;
+    width: 190px;
+    height: 254px;
+    background: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+  }
+
+  .card-port-html:hover{
+    width: 190px;
+    height: 254px;
+    background-image:url(/Images/Home-1.png);
+    background-size:cover;
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 20px;
+    background-color: #dfdfdf;
+    transition: all .5s;
+  }
+  
+  
+  .secondAnimation {
+    --hoverContorno:  rgba(124, 39, 48, 0.55);
+  }
+  
+  .secondAnimation:hover,
+  .secondAnimation:focus {
+    -webkit-animation: cardAnimacion 1.4s;
+    animation: cardAnimacion 1.4s;
+    box-shadow: 1 1 1 10px rgba(255, 255, 255, 0);
+    border-radius: 10px;
+  }
+  
+  @-webkit-keyframes cardAnimacion {
+    0% {
+      box-shadow: 0 0 0 0 var(--hoverContorno);
+    }
+  }
+  
+  @keyframes cardAnimacion {
+    0% {
+      box-shadow: 0 0 0 0 var(--hoverContorno);
+    }
+  }
+
+  /*texto de titulo*/
+  .txt{
+    margin-top: 5rem;
+    margin-left: 45rem;
+    color: white;
+  }
+  
+/* Deskpot first media*/
+
+@media (min-width:320px) and (max-width:576px) { 
+
+    form{
+    display:flex;
+    }
+ 
+    .btn{
+     font-size: 5px !important;
+    }
+ 
+    footer{
+     font-size: 5px !important
+    }
+ 
+    /*sobre mi */
+    .card{
+     display: grid;
+     max-width: 300px;
+     max-height: 50px;
+    }
+ 
+    .card-body{
+     max-width: 500px;
+    }
+     .card-title{
+        display: grid;
+ 
+ }
+ .card-text {
+    color: white;
+    font-size: 1rem;
+}
+ /* Habilidades estilo*/
+ 
+    .cardsup{
+     margin-top:0;
+     padding: 0;
+     padding-top: 2rem;
+     display: grid !important;
+     grid-area: 10px;
+     grid-column-start: 2;
+     grid-template-columns: 50px 50px;
+     grid-column-gap: 70px;
+     grid-row-gap: 50px;
+    }
+ 
+ 
+ .idioma{
+     padding-top: 5rem;
+ 
+ 
+ }
+ 
+ .container{
+     display: grid;
+     font-style:oblique ;
+     font-size: 5px;
+     color:white;
+ }
+ 
+ h1{
+     background: none;
+     width: 20px;
+ 
+ }
+ 
+ h1:hover{
+     color: brown;
+ }
+ 
+ .css-card::before{
+     content: "CSS";
+     font-size: 15px;
+     align-content: center;
+     background: none;
+     color: white;
+     text-decoration: none;
+ }
+ 
+ .css-card::after:hover{
+     background: none;
+     color: white;
+     text-decoration: none;
+ }
+ 
+ .cardcss-1 {
+     width: 100px;
+     height: 250px;
+     background-color: #29282863;
+     border-radius: 1rem;
+     border: #2b2929ad 0.2rem solid;
+     transition: all 0.4s ease-in;
+     box-shadow: 0.4rem 0.4rem 0.6rem rgba(124, 39, 48, 0.55);
+    }
+    
+    .cardcss-1:hover {
+     transform: translateY(-1.5rem);
+     border: rgba(124, 39, 48, 0.55) 0.2em solid;
+     border-radius: 2.5rem 0 2.5rem 0;
+    }
+    
+    /*HTML estilo */
+    .cardcss-2 {
+     width: 100px;
+     height: 250px;
+     background-color: #29282863;
+     border-radius: 1rem;
+     border: #2b2929ad 0.2rem solid;
+     transition: all 0.4s ease-in;
+     box-shadow: 0.4rem 0.4rem 0.6rem rgba(124, 39, 48, 0.55);
+    }
+    
+    .cardcss-2:hover {
+     transform: translateY(-1.5rem);
+     border: rgba(124, 39, 48, 0.55) 0.2em solid;
+     border-radius: 2.5rem 0 2.5rem 0;
+    }
+    .html-card::before{
+     content: "HTML";
+     font-size: 15px;
+     align-content: center;
+     background: none;
+     color: white;
+     text-decoration: none;
+ }
+ 
+ .html-card::after:hover{
+     background: none;
+     color: white;
+     text-decoration: none;
+ }
+ 
+ /*JS estilo */
+ .cardcss-3 {
+     width: 100px;
+     height: 250px;
+     background-color: #29282863;
+     border-radius: 1rem;
+     border: #2b2929ad 0.2rem solid;
+     transition: all 0.4s ease-in;
+     box-shadow: 0.4rem 0.4rem 0.6rem rgba(124, 39, 48, 0.55);
+    }
+    
+    .cardcss-3:hover {
+     transform: translateY(-1.5rem);
+     border: rgba(124, 39, 48, 0.55) 0.2em solid;
+     border-radius: 2.5rem 0 2.5rem 0;
+    }
+    .js-card::before{
+     content: "JavaScript";
+     font-size: 15px;
+     align-content: center;
+     background: none;
+     color: white;
+     text-decoration: none;
+ }
+ 
+ .js-card::after:hover{
+     background: none;
+     color: white;
+     text-decoration: none;
+ }
+ 
+ /*React estilo */
+ .cardcss-4 {
+     width: 100px;
+     height: 250px;
+     background-color: #29282863;
+     border-radius: 1rem;
+     border: #2b2929ad 0.2rem solid;
+     transition: all 0.4s ease-in;
+     box-shadow: 0.4rem 0.4rem 0.6rem rgba(124, 39, 48, 0.55);
+    }
+    
+    .cardcss-4:hover {
+     transform: translateY(-1.5rem);
+     border: rgba(124, 39, 48, 0.55) 0.2em solid;
+     border-radius: 2.5rem 0 2.5rem 0;
+    }
+    .react-card::before{
+     content: "React";
+     font-size: 15px;
+     align-content: center;
+     background: none;
+     color: white;
+     text-decoration: none;
+ }
+ 
+ .react-card::after:hover{
+     background: none;
+     color: white;
+     text-decoration: none;
+ }
+ 
+ /*PS estilo */
+ .cardcss-6 {
+     width: 100px;
+     height: 250px;
+     background-color: #29282863;
+     border-radius: 1rem;
+     border: #2b2929ad 0.2rem solid;
+     transition: all 0.4s ease-in;
+     box-shadow: 0.4rem 0.4rem 0.6rem rgba(124, 39, 48, 0.55);
+    }
+    
+    .cardcss-6:hover {
+     transform: translateY(-1.5rem);
+     border: rgba(124, 39, 48, 0.55) 0.2em solid;
+     border-radius: 2.5rem 0 2.5rem 0;
+    }
+    .ps-card::before{
+     content: "Photoshop";
+     font-size: 15px;
+     align-content: center;
+     background: none;
+     color: white;
+     text-decoration: none;
+ }
+ 
+ .ps-card::after:hover{
+     background: none;
+     color: white;
+     text-decoration: none;
+ }
+ 
+ /*AI estilo */
+ 
+ .cardcss-5 {
+     width: 100px;
+     height: 250px;
+     background-color: #29282863;
+     border-radius: 1rem;
+     border: #2b2929ad 0.2rem solid;
+     transition: all 0.4s ease-in;
+     box-shadow: 0.4rem 0.4rem 0.6rem rgba(124, 39, 48, 0.55);
+    }
+    
+    .cardcss-5:hover {
+     transform: translateY(-1.5rem);
+     border: rgba(124, 39, 48, 0.55) 0.2em solid;
+     border-radius: 2.5rem 0 2.5rem 0;
+    }
+    .ai-card::before{
+     content: "Adobe Ilustrator";
+     font-size: 15px;
+     align-content: center;
+     background: none;
+     color: white;
+     text-decoration: none;
+ }
+ 
+ .ai-card::after:hover{
+     background: none;
+     color: white;
+     text-decoration: none;
+ }
+ 
+ /*wp estilo */
+ 
+ .cardcss-7 {
+     width: 100px;
+     height: 250px;
+     background-color: #29282863;
+     border-radius: 1rem;
+     border: #2b2929ad 0.2rem solid;
+     transition: all 0.4s ease-in;
+     box-shadow: 0.4rem 0.4rem 0.6rem rgba(124, 39, 48, 0.55);
+    }
+    
+    .cardcss-7:hover {
+     transform: translateY(-1.5rem);
+     border: rgba(124, 39, 48, 0.55) 0.2em solid;
+     border-radius: 2.5rem 0 2.5rem 0;
+    }
+    .wp-card::before{
+     content: "WordPress";
+     font-size: 15px;
+     align-content: center;
+     background: none;
+     color: white;
+     text-decoration: none;
+ }
+ 
+ .wp-card::after:hover{
+     background: none;
+     color: white;
+     text-decoration: none;
+ }
+ 
+ /*figma estilo */
+ 
+ .cardcss-8 {
+     width: 100px;
+     height: 250px;
+     background-color: #29282863;
+     border-radius: 1rem;
+     border: #2b2929ad 0.2rem solid;
+     transition: all 0.4s ease-in;
+     box-shadow: 0.4rem 0.4rem 0.6rem rgba(124, 39, 48, 0.55);
+    }
+    
+    .cardcss-8:hover {
+     transform: translateY(-1.5rem);
+     border: rgba(124, 39, 48, 0.55) 0.2em solid;
+     border-radius: 2.5rem 0 2.5rem 0;
+    }
+    .fg-card::before{
+     content: "Figma";
+     font-size: 15px;
+     align-content: center;
+     background: none;
+     color: white;
+     text-decoration: none;
+ }
+ 
+ .fg-card::after:hover{
+     background: none;
+     color: white;
+     text-decoration: none;
+ }
+ 
+ /*porfolio mobil*/
+ 
+ .mt-port{
+    margin: 0;
+    padding: 0;
+    display:grid;
+    grid-area: 5px;
+    grid-column-start: 1;
+    grid-template-columns: 300px 200px;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+
+.txt{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 80px;
+}
+
+.card-port {
+    width: 190px;
+    height: 254px;
+    background: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+  }
+
+  
+   /*contacto mobil */
+   .mt-cont {
+     margin: 0;
+     padding: 0;
+     display: grid;
+     grid-area: 10px;
+     grid-column-start: 2;
+     grid-template-columns: 50px 50px;
+     grid-column-gap: 70px;
+     grid-row-gap: 70px;
+ }
+ 
+ .form-control{
+         margin: 0;
+         padding: 0;
+         display: grid;
+         grid-area: 10px;
+         grid-column-start: 2;
+         grid-template-columns: 50px 50px;
+         grid-column-gap: 50px;
+         grid-row-gap: 50px;
+ 
+ }
+ 
+ .mt-form{
+     margin-top:10px;
+     padding: 0;
+     display: grid;
+     grid-column-start: 1;
+     grid-column-gap: 40px;
+     grid-row-gap: 30px;
+ }
+ .mt-form-top{
+     display:grid ;
+     margin:0;
+     padding: 0;
+ }
+ 
+ 
+ .mt-form-top{
+     margin: 0;
+     padding: 0;
+     display: grid;
+     grid-area: 10px;
+     grid-column-start: 1;
+     grid-template-columns: 70px 70px;
+     grid-column-gap: 50px;
+     grid-row-gap: 10px;
+ }
+ 
+ 
+ 
+ .contactame{
+     padding: 0;
+     margin: 0;
+     display: grid;
+     color: white;
+ }
+ 
+ .btnform{
+     border-radius: 0.1rem !important;
+     color: white ;
+     background-color:rgba(124, 39, 48, 0.55) !important;
+ }
+ 
+ .btn-mobile {
+     margin: 0;
+     padding: 0;
+     margin-left: 50px;
+     display: grid;
+     grid-column-start: 1;
+     grid-column-gap: 50px;
+     grid-row-gap: 10px;
+     background: none;
+ 
+ }
+ 
+ }
+
+
+
+
+
+
+
+
