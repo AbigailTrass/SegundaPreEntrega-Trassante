@@ -1,0 +1,98 @@
+
+//Card General //
+
+.cardsup {
+    align-items: center;
+    padding-left: 30rem;
+    padding-top: 5rem;
+    display: grid;
+    grid-area: 10px;
+    grid-column-start: 4;
+    grid-template-columns: 200px 200px 200px;
+    grid-column-gap: 70px;
+    grid-row-gap: 50px;
+}
+
+//Idioma//
+
+div{
+    p {
+        font-style: map-get($map: $font, $key:"fontStyle" );
+        font-size: map-get($map: $font, $key: "fontSizeRem");
+        text-align: center;
+        padding-top: 5rem;
+        color: map-get($map: $coloresBgMain, $key:"white" );
+    }
+}
+
+//el contenedor de Idioma//
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.container:hover .card {
+    filter: $filterHoverCard ;
+    opacity: -5;
+    transform: $containerHoverCardIdiomaTransform;
+    box-shadow: none;
+}
+
+.container:hover .card-idioma:hover{
+    transform: $containerHoverCardIdiomaTransform;
+    filter: blur(0px);
+    opacity: 1;
+    box-shadow: $boxShadowContainerHover;
+    background: map-get($map:$coloresBgMain , $key:"container-card" );
+    color: map-get($map: $coloresBgMain, $key: "white" );
+}
+
+// card de Idioma //
+
+.card-idioma {
+    margin: 2%;
+    background: map-get($map:$coloresBgMain , $key:"bg-idioma-card" ) ;
+    width: 15rem;
+    height: 15rem;
+    box-shadow: $boxShadowIdioma;
+    border-radius: 3px;
+    transition: $cardIdiomaTransition;
+    align-items: center;
+    text-align: center;
+    font-size: 9px;
+    padding-top: 40px;
+}
+
+.card-idioma>span {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    background: none;
+    font-size: map-get($map: $font, $key:"fontSizeRem" );
+    max-width: 100rem;
+}
+
+//Modificación para Movile de Card tanto de Habilidades como de Idioma//
+
+@include small (600px) {
+  .cardsup {
+    grid-column-start: 1;
+    align-items:start;
+    padding-left: 10px;
+    grid-template-rows: 350px 350px 350px 350px ;
+  }
+
+  .card-idioma{
+    width: 10rem;
+    height: 10rem;
+  }
+  .card-idioma>span {
+    font-size: 15px;
+  }
+
+}
+
+

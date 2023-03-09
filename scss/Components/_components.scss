@@ -1,0 +1,251 @@
+//Se Crean DIVS , Contenedores , Botones //
+
+.btn {
+    border: $borderNone !important;
+    color: map-get($coloresBgMain , "white") !important ;
+    background-color: $btnBgColor !important;
+
+    &:hover {
+        margin-top: 10px;
+        box-shadow: $btnBoxShadowHoverHome;
+    }
+}
+
+//Creamos el componente card , card body y card text //
+
+.card{
+    background-color: map-get($coloresBgMain, "black") !important;
+    color : map-get($map: $coloresBgMain, $key:"brown" );
+    border: $borderNone;
+    padding-top: 5rem;
+
+    &:hover{
+        border: $borderContactoHover;
+        box-shadow: $boxShadow;
+    }
+}
+
+.card-body {
+    margin-top: 10rem;
+    font-size: map-get($map: $font, $key: "fontSizeMedium") ;
+}
+
+.card-text {
+    color: map-get($map: $coloresBgMain, $key:"white" );
+    font-size: map-get($map: $font, $key:"fontSizeRem" );
+}
+
+//Aca tenemos las CARDS de BEFORE con Hover de Habilidades//
+
+.css-card::before{
+    content: "CSS";
+    align-content: center;
+    background: $bgNone;
+    color: map-get($map: $coloresBgMain , $key:"white" );
+    text-decoration: map-get($map:$font , $key:"textDecoration" );
+
+}
+
+.css-card::after:hover {
+    background-color: $bgNone;
+    color: map-get($map: $coloresBgMain, $key:"white" );
+    text-decoration: map-get($map: $font, $key:"textDecoration" );
+}
+
+.html-card::before{
+    @extend .css-card::before;
+    content: "HTML";
+}
+.html-card::after:hover{
+    @extend .css-card::after:hover
+}
+
+.js-card::before{
+    @extend .css-card::before;
+    content: "JavaScript";
+}
+.js-card::after:hover{
+    @extend .css-card::after:hover
+}
+.react-card::before{
+    @extend .css-card::before;
+    content: "React";
+}
+.react-card::after:hover{
+    @extend .css-card::after:hover
+}
+.ai-card::before{
+    @extend .css-card::before;
+    content: "Adobe Ilustration";
+}
+.ai-card::after:hover{
+    @extend .css-card::after:hover
+}
+.ps-card::before{
+    @extend .css-card::before;
+    content: "Photoshop Ilustrator";
+}
+.ps-card::after:hover{
+    @extend .css-card::after:hover
+}
+.wp-card::before{
+    @extend .css-card::before;
+    content: "WordPress";
+}
+.wp-card::after:hover{
+    @extend .css-card::after:hover
+}
+.fg-card::before{
+    @extend .css-card::before;
+    content: "Figma";
+}
+.fg-card::after:hover{
+    @extend .css-card::after:hover
+}
+
+
+
+
+.cardcss-1 {
+    padding-top: 7rem;
+    margin-left: 4rem;
+    width: 12.5rem;
+    height: 17rem;
+    background-color: map-get($map: $coloresBgMain, $key:"cardcolor");
+    border-radius: 1rem;
+    border: $borderCard;
+    transition: $cardTransitionEstilo;
+    box-shadow: $boxShadowCards;
+
+    &:hover {
+        transform: $cardTransformEstilo;
+        border: $borderCardHover;
+        border-radius: $borderRadiusCards;
+    }
+}
+
+
+.cardcss-2 {
+    @extend .cardcss-1
+}
+
+.cardcss-3 {
+    @extend .cardcss-1
+}
+
+.cardcss-4 {
+    @extend .cardcss-1
+}
+
+.cardcss-5 {
+    @extend .cardcss-1
+}
+.cardcss-6 {
+    @extend .cardcss-1
+}
+.cardcss-7 {
+    @extend .cardcss-1
+}
+.cardcss-8 {
+    @extend .cardcss-1
+}
+
+// // Componente de Portfolio //
+
+.card-port{
+    margin-left: 5rem;
+    width: 190px;
+    height: 254px;
+    background: map-get($map: $coloresBgMain, $key: "bg-card-port" );
+    border: $borderCardPort;
+    border-radius: 20px;
+    
+    &:hover{
+        width: 150px;
+        height: 254px;
+        background-image: url(/Images/mobil.webp);
+        background-size: cover;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: map-get($map:$coloresBgMain, $key:"black" );
+        transition: all 0.5s;
+    }
+}
+
+.card-port-html {
+    @extend .card-port;
+    &:hover {
+        background-image: url(/Images/xbox.webp)
+    }
+}
+
+.card-port-ps {
+    @extend .card-port;
+    &:hover {
+        background-image: url(/Images/AI.webp);
+    }
+}
+
+//Componentes de Form //
+
+.mt-cont{
+    padding-top: 10rem;
+     margin-right: 35rem;
+     padding-left: 15rem;
+}
+
+.card-contacto{
+    background-color: map-get($map: $coloresBgMain, $key:"black" );
+    color: map-get($map: $coloresBgMain, $key:"brown" );
+    border: $borderNone;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+
+    &:hover{
+        border: $borderContactoHover;
+        box-shadow: $boxShadow;
+        color: map-get($map: $coloresBgMain, $key:"white" );
+    }
+}
+
+
+
+
+
+
+//Card de Habilidades movile más especifico //
+
+@include small(600px) {
+    .btn {
+        display: grid;
+        grid-template-rows: auto !important;
+    }
+
+    .card-text{
+        font-size: 20px;
+    }
+
+
+
+    .cardcss-1 {
+        display: grid !important; 
+        grid-area: 100px;
+        grid-column-start: 1;
+        grid-row: auto;
+        margin-bottom: 10px;
+        width: 10rem;
+
+    }
+    //Componentes de FORM para Movile //
+    .mt-cont {
+        padding-left: 50px !important;
+    }
+
+    //Componentes de Porfolio para Movile //
+    .card-port{
+        display: grid;
+        margin-left: 0;
+    }
+}
+

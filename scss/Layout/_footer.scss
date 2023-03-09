@@ -1,0 +1,11 @@
+.footer {
+    background: black !important;
+}
+
+@include small (600px) {
+    .footer {
+        .pfooter{
+            font-size: 15px;
+        }
+    }
+}

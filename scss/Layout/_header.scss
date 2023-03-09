@@ -1,0 +1,20 @@
+header {
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: map-get($coloresBgMain , "black" );
+        form{
+            justify-content: center;
+           
+        }
+    }
+}
+
+@include small(600px) {
+    header {
+        display:grid !important;
+        grid-template-columns: 100px 100px 100px !important;
+        padding-left: 50px ;
+
+    }
+}

@@ -1,0 +1,36 @@
+//NavBar y Footer//
+
+@mixin header {
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: $blackColor;
+            form {
+                justify-content: center;
+                box-shadow: $boxShadow;
+                background-color: $bgColorRed;
+                a {
+                    .btn{
+                       border: $borderNone;
+                       color: $whiteColor;
+                    }
+                }
+                }
+             }
+             @include for-phone-only {
+                .footer {
+                    font-size: 1px ;
+                }
+             }
+         }
+
+// Mixin Responsive //
+
+$screen-sm-min: 600px;
+
+@mixin small ($screen-sm-min) {
+    @media (max-width: $screen-sm-min) {
+        @content;
+    }
+}
+

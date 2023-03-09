@@ -1,0 +1,14 @@
+
+
+@-webkit-keyframes secondAnimation{
+    0% {
+        box-shadow: 0 0 0 0 var(--hoverContorno);
+    }
+}
+
+@keyframes secondAnimation {
+    50% {
+        box-shadow: 100 10 10 10 var(--hoverContorno);
+    }
+    
+};

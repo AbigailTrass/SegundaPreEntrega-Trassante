@@ -1,0 +1,16 @@
+@import "./Utilites/_mixin";
+@import "./Utilites/_variables";
+@import "./Vendors/_media";
+@import "./Components/_components";
+@import "./Reset/reset.scss";
+@import "./Layout/_header";
+@import "./Layout/_footer";
+@import "./Layout/_grid";
+@import "./Vendors/_jquerry.scss";
+@import "./base/_buttons";
+@import "./pages/index";
+@import "./pages/contacto.scss";
+@import "./pages/Habilidades.scss";
+@import "./pages/portfolio.scss";
+@import "./pages/sobremi.scss";
+

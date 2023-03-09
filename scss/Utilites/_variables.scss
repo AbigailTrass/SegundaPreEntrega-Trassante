@@ -1,0 +1,91 @@
+//Backgrounds aparte del Main //
+$bgNone: none;
+$bgImagePortHtml: url(/Images/Home-1.png);
+
+
+
+//Bordes de box y Box Shadows//
+$borderNone: none;
+$boxShadow: 0 1rem 3rem rgba(124, 39, 48, 0.55);
+$boxShadowCards: 0.4rem 0.4rem 0.6rem rgba(124, 39, 48, 0.55);
+$borderRadiusCards: 2.5rem 0 2.5rem 0;
+$borderCard: #2b2929ad 0.2rem solid;
+$borderCardHover:rgba(124, 39, 48, 0.55) 0.2em solid;
+$borderContactoHover:solid brown;
+$boxShadowIdioma: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
+$boxShadowContainerHover: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+$borderCardPort: 2px solid rgb(255, 255, 255);
+
+// //Fuentes y tamaños//
+// $fontSizeMedium: medium;
+// $fontSizeRem: 2rem;
+// $fontStyle: oblique;
+// $textDecoration: none;
+
+
+//Transiciónes y Transformaciónes//
+$cardTransitionEstilo: all 0.4s ease-in;
+$cardTransformEstilo: translateY(-1.5rem);
+$cardIdiomaTransition:.2s all;
+$containerHoverCardTransform:scale(.98);
+$containerHoverCardIdiomaTransform: scale(1);
+
+//Filtros y Opacidades //
+$filterHoverCard: blur(3px);
+$filterHoverCardIdioma:blur(0px);
+$opacity: 1;
+$cardPortHoverTransition: all .5s;
+
+
+//Botones Estilo de Form//
+$btnBgColor: rgba(124, 39, 48, 0.55);
+$btnBorder: 0.5rem;
+$btnBoxShadowHover: 0 1rem 3rem rgba(124, 39, 48, 0.55);
+$btnRadiusForm: 0.5rem;
+
+
+//Botones estilo de Home//
+$btnBgColorHome:rgba(124, 39, 48, 0.55);
+$btnBoxShadowHoverHome: 0 1rem 3rem rgba(124, 39, 48, 0.55);
+
+
+
+//Estilo de Portfolio //
+$borderCardPortHover: 2px solid rgb(255, 255, 255);
+$borderRadiusPortHover:20px;
+
+//Animaciónes y Focus //
+$portfolioSecondHover:rgba(124, 39, 48, 0.55);
+$portfolioSecondFocusShadow:1 1 1 10px rgba(255, 255, 255, 0);
+
+//Colores Background y Main agrupados //
+
+$coloresBgMain : (
+    "white": white,
+    "red" : red,
+    "brown": brown,
+    "black": black,
+    "card-color":#29282863,
+    "port-hover-color": #dfdfdf,
+    "container-card": #A82C2C,
+    "bg-idioma-card": #DBBDBD,
+    "bg-card-port": rgb(0, 0, 0), 
+    "bg-color-btn": rgba(124, 39, 48, 0.55),
+);
+
+//Mapeo de Fuentes y Tamaños
+
+$font : (
+    "fontSizeMedium": medium,
+    "fontSizeRem": 2rem,
+    "fontStyle": oblique,
+    "textDecoration": none,
+);
+
+
+
+
+
+
+
+

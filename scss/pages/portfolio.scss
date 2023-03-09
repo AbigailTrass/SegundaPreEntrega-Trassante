@@ -1,0 +1,44 @@
+
+// Div de los trabajos //
+
+div {
+    div.mt-port{
+        display: flex;
+        margin: 0;
+        padding:  2rem 0 0 15rem;
+    }
+}
+
+.txt{
+    margin-top: 5rem;
+    margin-left: 45rem;
+    color: map-get($map: $coloresBgMain , $key:"white" );
+}
+
+
+
+//Div de los trabajos responsive movil//
+
+@include small (600px) {
+    div { display: grid !important;
+        div.mt-port {
+            display: grid;
+            padding: 0;
+            padding-left: 50px;
+        }
+    }
+    .txt {
+        margin: 0;
+        padding: 0;
+        padding-left: 100px;
+    }
+    header {
+        display:grid !important;
+        grid-template-columns: 0px  !important;
+
+    }
+
+ 
+
+    
+}

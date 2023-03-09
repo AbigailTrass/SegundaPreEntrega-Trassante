@@ -1,0 +1,27 @@
+div {
+    h1.contactame{
+        display: flex;
+        color: map-get($map: $coloresBgMain, $key: "white");
+         margin-left: 30rem;
+         margin-bottom: 5rem;
+    }
+}
+
+.mt-form{
+    margin-top: 2rem;
+    padding-left: 30rem;
+}
+
+@include small (600px) {
+    div{
+        h1.contactame {
+            display: grid;
+            margin-left: 50px !important;
+            margin-top: 10px;
+        }
+       }
+       
+       .mt-form {
+        padding-left: 50px !important;
+       }
+}

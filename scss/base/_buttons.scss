@@ -1,0 +1,32 @@
+
+  .btnform {
+        margin-top: 1rem;
+        border-radius: $btnRadiusForm;
+        color: map-get($map: $coloresBgMain, $key:"white" );
+        background-color: map-get($map: $coloresBgMain, $key:"bg-color-btn" );
+        &:hover {
+            margin-top: 10px;
+            box-shadow: $boxShadow;
+        }
+    }
+    .btnformd{
+        @extend .btnform,
+    }
+
+    .btn-mobile {
+        margin-left: 50rem;
+    }
+
+    //Aplicando Responsive small //
+
+    @include small (600px) {
+        .btn{ 
+            display:grid !important;
+            grid-column-start: 5 !important;
+            margin-bottom: 2px;
+        }
+        .btn-mobile {
+            margin-left: 100px !important;
+        }
+    }
+    
