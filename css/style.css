@@ -81,7 +81,7 @@
   .card-port:hover, .card-port-html:hover, .card-port-ps:hover {
     width: 150px;
     height: 254px;
-    background-image: url(./Images/mobil.webp);
+    background-image: url(../Images/mobil.webp);
     background-size: cover;
     border: 2px solid black;
     border-radius: 20px;
@@ -89,11 +89,11 @@
     transition: all 0.5s; }
 
 .card-port-html:hover {
-  background-image: url(./Images/xbox.webp); 
+  background-image: url(../Images/xbox.webp); 
 }
 
 .card-port-ps:hover {
-  background-image: url(./Images/AI.webp); 
+  background-image: url(../Images/AI.webp); 
 }
 
 .mt-cont {
@@ -205,7 +205,7 @@ div h1.contactame {
     padding-left: 50px !important; } }
 
 .cardsup {
-  background-image: url(./Images/25969833-ed7f-4f68-89bc-417fcaf6886f.webp) !important;
+  background-image: url(../Images/25969833-ed7f-4f68-89bc-417fcaf6886f.webp) !important;
   background-size: contain;
   align-items: center;
   padding-left: 30rem;
