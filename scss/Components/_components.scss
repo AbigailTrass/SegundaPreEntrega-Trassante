@@ -163,7 +163,7 @@
     &:hover{
         width: 150px;
         height: 254px;
-        background-image: url(../Images/mobil.webp);
+        background-image: url(../.././Images/mobil.webp);
         background-size: cover;
         border: 2px solid black;
         border-radius: 20px;
@@ -175,14 +175,14 @@
 .card-port-html {
     @extend .card-port;
     &:hover {
-        background-image: url(./Images/xbox.webp)
+        background-image: url(../.././Images/xbox.webp)
     }
 }
 
 .card-port-ps {
     @extend .card-port;
     &:hover {
-        background-image: url(../../Images/AI.webp);
+        background-image: url(../.././Images/AI.webp);
     }
 }
 
