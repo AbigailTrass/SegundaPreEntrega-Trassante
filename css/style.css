@@ -1,4 +1,4 @@
-@import url(scss/Utilites/_mixin.scss);
+@import url(../scss/Utilites/_mixin.scss);
 .btn {
   border: none !important;
   color: white !important;
@@ -203,6 +203,8 @@ div h1.contactame {
     padding-left: 50px !important; } }
 
 .cardsup {
+  background-image: url(/Images/25969833-ed7f-4f68-89bc-417fcaf6886f.webp) !important;
+  background-size: contain;
   align-items: center;
   padding-left: 30rem;
   padding-top: 5rem;
@@ -214,6 +216,7 @@ div h1.contactame {
   grid-row-gap: 50px; }
 
 div p {
+  background: none;
   font-style: oblique;
   font-size: 2rem;
   text-align: center;
