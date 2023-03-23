@@ -87,6 +87,8 @@ div{
     align-items:start;
     padding-left: 10px;
     grid-template-rows: 350px 350px 350px 350px ;
+    background: none !important;
+    
   }
 
   .card-idioma{
@@ -96,7 +98,35 @@ div{
   .card-idioma>span {
     font-size: 15px;
   }
+  .container{
+    display: flex;
+    justify-content: flex-start;
+  }
 
+  div{
+    p{
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 100px;
+    }
+  }
+  //Modificación para hobby Movile//
+.card.hobby {
+  width: 10rem;
+  height: 10rem;
+  -webkit-box-reflect:none !important;
+}
+.card-hobby>span {
+  font-size: 15px;
+}
+}
+//Responsive para 1024px //
+
+@include medium (1024px) {
+  .cardsup {
+    padding-left: 8rem;
+    padding-top: 5rem;
+  }
 }
 
 

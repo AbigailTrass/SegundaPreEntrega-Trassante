@@ -156,14 +156,13 @@
     margin-left: 5rem;
     width: 190px;
     height: 254px;
-    background: map-get($map: $coloresBgMain, $key: "bg-card-port" );
+    background-image: url(../Images/mobil.webp);
     border: $borderCardPort;
     border-radius: 20px;
     
     &:hover{
         width: 150px;
         height: 254px;
-        background-image: url(../Images/mobil.webp);
         background-size: cover;
         border: 2px solid black;
         border-radius: 20px;
@@ -174,13 +173,15 @@
 
 .card-port-html {
     @extend .card-port;
+    background-image: url(../Images/xbox.webp);
     &:hover {
-        background-image: url(../Images/xbox.webp)
+        background-image: url(../Images/xbox.webp);
     }
 }
 
 .card-port-ps {
     @extend .card-port;
+    background-image: url(../Images/AI.webp);
     &:hover {
         background-image: url(../Images/AI.webp);
     }
@@ -209,6 +210,53 @@
     }
 }
 
+// Circulos de Sobre Mi Hobby //
+
+.linea {
+    border: solid 5px map-get($map: $coloresBgMain, $key:"white" );
+    border-radius: 90%;
+    border-bottom: 20px;    
+    filter: brightness(50%);
+}
+
+//Contenedor de Hobby//
+
+.container:hover .card-hobby:hover{
+    transform: $containerHoverCardIdiomaTransform;
+    filter: blur(0.50px);
+    opacity: 1;
+    box-shadow: $boxShadowCards;
+    background: map-get($map:$coloresBgMain , $key:"container-card" );
+    color: map-get($map: $coloresBgMain, $key: "white" );
+    border-radius: 50%;
+    
+}
+
+
+//Card de Hobby//
+.card-hobby {
+    margin: 2%;
+    background: map-get($map:$coloresBgMain , $key:"container-card" ) ;
+    width: 20rem;
+    height: 20rem;
+    box-shadow: $boxShadowIdioma;
+    border-radius: 3px;
+    transition: $cardIdiomaTransition;
+    align-items: center;
+    text-align: center;
+    font-size: 9px;
+    padding-top: 40px;
+    -webkit-box-reflect: below -25px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.5)));
+}
+
+.card-hobby>span {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    background: none;
+    font-size: map-get($map: $font, $key:"fontSizeRem" );
+    max-width: 100rem;
+}
 
 
 

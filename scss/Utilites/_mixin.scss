@@ -27,9 +27,16 @@
 // Mixin Responsive //
 
 $screen-sm-min: 600px;
+$screen-md-min: 1024px;
 
 @mixin small ($screen-sm-min) {
     @media (max-width: $screen-sm-min) {
+        @content;
+    }
+}
+
+@mixin medium ($screen-md-min) {
+    @media (max-width: $screen-md-min){
         @content;
     }
 }

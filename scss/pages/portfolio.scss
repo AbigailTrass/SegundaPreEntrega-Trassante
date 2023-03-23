@@ -30,17 +30,31 @@ div {
         }
     }
     .txt {
-        margin: 0;
-        padding: 0;
-        padding-left: 100px;
+        margin-top: 5rem;
+         margin-left: 5rem !important;
     }
     header {
         display:grid !important;
         grid-template-columns: 0px  !important;
 
     }
-
- 
-
-    
 }
+
+//Responsive para 1024px//
+
+@include medium (1024px) {
+    div {
+        div.mt-port{
+            display: flex;
+            margin: 0;
+            padding:  2rem 0 0 2rem;
+        }
+    }
+
+    .txt{
+        margin-top: 5rem;
+        margin-left: 25rem;
+        color: map-get($map: $coloresBgMain , $key:"white" );
+    }
+    
+  }

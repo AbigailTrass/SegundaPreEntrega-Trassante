@@ -1,4 +1,4 @@
-@import url(../scss/Utilites/_mixin.scss);
+@import url(scss/Utilites/_mixin.scss);
 .btn {
   border: none !important;
   color: white !important;
@@ -75,26 +75,27 @@
   margin-left: 5rem;
   width: 190px;
   height: 254px;
-  background: black;
+  background-image: url(../Images/mobil.webp);
   border: 2px solid white;
   border-radius: 20px; }
   .card-port:hover, .card-port-html:hover, .card-port-ps:hover {
     width: 150px;
     height: 254px;
-    background-image: url(../Images/mobil.webp);
     background-size: cover;
     border: 2px solid black;
     border-radius: 20px;
     background-color: black;
     transition: all 0.5s; }
 
-.card-port-html:hover {
-  background-image: url(../Images/xbox.webp); 
-}
+.card-port-html {
+  background-image: url(../Images/xbox.webp); }
+  .card-port-html:hover {
+    background-image: url(../Images/xbox.webp); }
 
-.card-port-ps:hover {
-  background-image: url(../Images/AI.webp); 
-}
+.card-port-ps {
+  background-image: url(../Images/AI.webp); }
+  .card-port-ps:hover {
+    background-image: url(../Images/AI.webp); }
 
 .mt-cont {
   padding-top: 10rem;
@@ -112,6 +113,43 @@
     border: solid brown;
     box-shadow: 0 1rem 3rem rgba(124, 39, 48, 0.55);
     color: white; }
+
+.linea {
+  border: solid 5px white;
+  border-radius: 90%;
+  border-bottom: 20px;
+  filter: brightness(50%); }
+
+.container:hover .card-hobby:hover {
+  transform: scale(1);
+  filter: blur(0.5px);
+  opacity: 1;
+  box-shadow: 0.4rem 0.4rem 0.6rem rgba(124, 39, 48, 0.55);
+  background: #A82C2C;
+  color: white;
+  border-radius: 50%; }
+
+.card-hobby {
+  margin: 2%;
+  background: #A82C2C;
+  width: 20rem;
+  height: 20rem;
+  box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  transition: 0.2s all;
+  align-items: center;
+  text-align: center;
+  font-size: 9px;
+  padding-top: 40px;
+  -webkit-box-reflect: below -25px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(255, 255, 255, 0.5))); }
+
+.card-hobby > span {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  background: none;
+  font-size: 2rem;
+  max-width: 100rem; }
 
 @media (max-width: 600px) {
   .btn {
@@ -156,7 +194,10 @@ header nav {
 
 @media (max-width: 600px) {
   .footer .pfooter {
-    font-size: 15px; } }
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+    margin-left: 0; } }
 
 @-webkit-keyframes secondAnimation {
   0% {
@@ -184,17 +225,18 @@ header nav {
     grid-column-start: 5 !important;
     margin-bottom: 2px; }
   .btn-mobile {
-    margin-left: 100px !important; } }
+    margin-left: 100px !important;
+    width: 200px; } }
 
 div h1.contactame {
-  display: flex;
+  display: contents;
   color: white;
   margin-left: 30rem;
   margin-bottom: 5rem; }
 
 .mt-form {
   margin-top: 2rem;
-  padding-left: 30rem; }
+  padding-left: 25rem; }
 
 @media (max-width: 600px) {
   div h1.contactame {
@@ -202,7 +244,14 @@ div h1.contactame {
     margin-left: 50px !important;
     margin-top: 10px; }
   .mt-form {
-    padding-left: 50px !important; } }
+    padding-left: 50px !important; }
+  .form-control {
+    width: 500px !important; } }
+
+@media (max-width: 1024px) {
+  .mt-form {
+    margin-top: 2rem;
+    padding-left: 10rem; } }
 
 .cardsup {
   background-image: url(../Images/25969833-ed7f-4f68-89bc-417fcaf6886f.webp) !important;
@@ -271,12 +320,31 @@ div p {
     grid-column-start: 1;
     align-items: start;
     padding-left: 10px;
-    grid-template-rows: 350px 350px 350px 350px; }
+    grid-template-rows: 350px 350px 350px 350px;
+    background: none !important; }
   .card-idioma {
     width: 10rem;
     height: 10rem; }
   .card-idioma > span {
+    font-size: 15px; }
+  .container {
+    display: flex;
+    justify-content: flex-start; }
+  div p {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 100px; }
+  .card.hobby {
+    width: 10rem;
+    height: 10rem;
+    -webkit-box-reflect: none !important; }
+  .card-hobby > span {
     font-size: 15px; } }
+
+@media (max-width: 1024px) {
+  .cardsup {
+    padding-left: 8rem;
+    padding-top: 5rem; } }
 
 div div.mt-port {
   display: flex;
@@ -296,12 +364,21 @@ div div.mt-port {
       padding: 0;
       padding-left: 50px; }
   .txt {
-    margin: 0;
-    padding: 0;
-    padding-left: 100px; }
+    margin-top: 5rem;
+    margin-left: 5rem !important; }
   header {
     display: grid !important;
     grid-template-columns: 0px  !important; } }
+
+@media (max-width: 1024px) {
+  div div.mt-port {
+    display: flex;
+    margin: 0;
+    padding: 2rem 0 0 2rem; }
+  .txt {
+    margin-top: 5rem;
+    margin-left: 25rem;
+    color: white; } }
 
 .mt-img {
   margin-top: 9rem !important;

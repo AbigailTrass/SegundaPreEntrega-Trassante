@@ -5,7 +5,10 @@
 @include small (600px) {
     .footer {
         .pfooter{
+            display: flex;
+            justify-content: flex-start;
             font-size: 15px;
+            margin-left: 0;
         }
     }
 }

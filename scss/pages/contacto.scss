@@ -1,6 +1,6 @@
 div {
     h1.contactame{
-        display: flex;
+        display:contents;
         color: map-get($map: $coloresBgMain, $key: "white");
          margin-left: 30rem;
          margin-bottom: 5rem;
@@ -9,8 +9,10 @@ div {
 
 .mt-form{
     margin-top: 2rem;
-    padding-left: 30rem;
+    padding-left: 25rem;
 }
+
+//Generando Responsive para 600px //
 
 @include small (600px) {
     div{
@@ -24,4 +26,16 @@ div {
        .mt-form {
         padding-left: 50px !important;
        }
+       .form-control {
+        width: 500px !important;
+       }
+}
+
+//Responsive para 1024px//
+
+@include medium (1024px) {
+    .mt-form{
+        margin-top: 2rem;
+        padding-left: 10rem;
+    }
 }
