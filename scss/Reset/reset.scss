@@ -5,3 +5,6 @@
     background-color: map-get($coloresBgMain , "black" )
 }
 
+@include small (600px) {
+   box-sizing: border-box !important;
+}

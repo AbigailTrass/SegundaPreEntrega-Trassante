@@ -176,6 +176,9 @@
   box-sizing: border-box;
   background-color: black; }
 
+@media (max-width: 600px) {
+  box-sizing: border-box !important; }
+
 header nav {
   display: flex;
   justify-content: center;
@@ -251,7 +254,8 @@ div h1.contactame {
 @media (max-width: 1024px) {
   .mt-form {
     margin-top: 2rem;
-    padding-left: 10rem; } }
+    padding-left: 10rem;
+    overflow: hidden; } }
 
 .cardsup {
   background-image: url(../Images/25969833-ed7f-4f68-89bc-417fcaf6886f.webp) !important;
@@ -319,27 +323,32 @@ div p {
   .cardsup {
     grid-column-start: 1;
     align-items: start;
-    padding-left: 10px;
-    grid-template-rows: 350px 350px 350px 350px;
-    background: none !important; }
-  .card-idioma {
-    width: 10rem;
-    height: 10rem; }
-  .card-idioma > span {
-    font-size: 15px; }
-  .container {
-    display: flex;
-    justify-content: flex-start; }
-  div p {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 100px; }
-  .card.hobby {
-    width: 10rem;
-    height: 10rem;
-    -webkit-box-reflect: none !important; }
-  .card-hobby > span {
-    font-size: 15px; } }
+    background: none !important;
+    overflow: hidden; } }
+
+.card-idioma {
+  width: 10rem;
+  height: 10rem; }
+
+.card-idioma > span {
+  font-size: 15px; }
+
+.container {
+  display: flex;
+  justify-content: flex-start; }
+
+div p {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 100px; }
+
+.card.hobby {
+  width: 10rem;
+  height: 10rem;
+  -webkit-box-reflect: none !important; }
+
+.card-hobby > span {
+  font-size: 15px; }
 
 @media (max-width: 1024px) {
   .cardsup {

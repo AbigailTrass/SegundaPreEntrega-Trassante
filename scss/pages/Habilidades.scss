@@ -85,9 +85,10 @@ div{
   .cardsup {
     grid-column-start: 1;
     align-items:start;
-    padding-left: 10px;
-    grid-template-rows: 350px 350px 350px 350px ;
     background: none !important;
+   overflow: hidden;
+}
+    
     
   }
 
@@ -119,7 +120,7 @@ div{
 .card-hobby>span {
   font-size: 15px;
 }
-}
+
 //Responsive para 1024px //
 
 @include medium (1024px) {
